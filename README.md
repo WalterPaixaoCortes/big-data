@@ -24,8 +24,9 @@ big-data/
 | Notebook | Conteúdo |
 |---|---|
 | `aula-01-conceitos-basicos-de-big-data.ipynb` | Fundamentos de Big Data: os 5 V's (origem histórica, Doug Laney), armazenamento e processamento distribuído (Google File System, MapReduce, Spark), arquitetura Lakehouse e camadas Medalhão (Bronze/Silver/Gold), modelagem de dados (OLTP vs. OLAP, modelo estrela, fatos e dimensões, Slowly Changing Dimensions) e os tipos de analytics que esse modelo viabiliza (descritiva, diagnóstica, preditiva, prescritiva), além da distinção entre processamento batch e streaming. Traz referências a artigos e papers originais (Nature, Google Research, USENIX, VLDB, CIDR, Kimball Group, entre outros) e um exercício prático com os dados reais da landing zone. |
+| `demonstracao-lakehouse-medalhao.ipynb` | Demonstração prática: comparativo de funcionalidades das principais plataformas de Big Data/Lakehouse do mercado (Databricks, Microsoft Fabric, Snowflake, AWS, Google Cloud), um mini Lakehouse com arquitetura medalhão rodando localmente em pandas (Bronze → Silver → Gold sobre `departamentos`, com orquestração simplificada), e um passo a passo de como implementar o mesmo padrão, com pipeline orquestrado, no **Microsoft Fabric** e no **Databricks**. |
 
-Cada notebook é autossuficiente e traz um badge para abrir diretamente no Google Colab.
+Cada notebook é autossuficiente e traz um badge para abrir diretamente no Google Colab. O notebook de demonstração gera uma pasta local `data/lakehouse/` (Bronze/Silver/Gold) ao ser executado — esses arquivos são derivados/regeneráveis e ficam fora do controle de versão (ver `.gitignore`).
 
 ## Dados (`data/landing/`)
 
