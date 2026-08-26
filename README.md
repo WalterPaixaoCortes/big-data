@@ -1,0 +1,62 @@
+# gr-notebooks
+
+Repositório de notebooks e material de apoio sobre **Engenharia de Dados e Big Data**, organizado em torno de um projeto aplicado: um pipeline de dados de eventos de RH em arquitetura de Lakehouse.
+
+## Estrutura do repositório
+
+```
+big-data/
+├── aula-big-data/                 # Notebooks Jupyter
+├── data/landing/                  # Dados de origem sintéticos (landing zone)
+│   ├── funcionarios/dt=AAAA-MM-DD/
+│   ├── departamentos/dt=AAAA-MM-DD/
+│   ├── cargos/dt=AAAA-MM-DD/
+│   └── eventos/dt=AAAA-MM-DD/
+├── scripts/
+│   └── generate_source_data.py    # Gera os dados sintéticos da landing zone
+├── PROJETO_HR_DATA_PIPELINE.md    # Especificação do projeto aplicado
+├── PROJETO_HR_DATA_PIPELINE.pdf   # Mesma especificação, em PDF
+└── requirements.txt                # Dependências Python para rodar os notebooks
+```
+
+## Notebooks (`aula-big-data/`)
+
+| Notebook | Conteúdo |
+|---|---|
+| `aula-01-conceitos-basicos-de-big-data.ipynb` | Fundamentos de Big Data: os 5 V's (origem histórica, Doug Laney), armazenamento e processamento distribuído (Google File System, MapReduce, Spark), arquitetura Lakehouse e camadas Medalhão (Bronze/Silver/Gold), modelagem de dados (OLTP vs. OLAP, modelo estrela, fatos e dimensões, Slowly Changing Dimensions) e os tipos de analytics que esse modelo viabiliza (descritiva, diagnóstica, preditiva, prescritiva), além da distinção entre processamento batch e streaming. Traz referências a artigos e papers originais (Nature, Google Research, USENIX, VLDB, CIDR, Kimball Group, entre outros) e um exercício prático com os dados reais da landing zone. |
+
+Cada notebook é autossuficiente e traz um badge para abrir diretamente no Google Colab.
+
+## Dados (`data/landing/`)
+
+Dados sintéticos que simulam a exportação periódica de um sistema de RH/HCM, gerados por `scripts/generate_source_data.py` e organizados em partições `dt=AAAA-MM-DD` (uma pasta por mês de extração):
+
+| Tabela | Conteúdo | Padrão de chegada |
+|---|---|---|
+| `funcionarios` | Cadastro de funcionários (nome, cargo, departamento, status, datas) | Snapshot completo a cada carga mensal |
+| `departamentos` | Cadastro de departamentos (nome, centro de custo, hierarquia) | Snapshot completo a cada carga mensal |
+| `cargos` | Cadastro de cargos (nome, nível, faixa salarial) | Snapshot completo a cada carga mensal |
+| `eventos` | Eventos de RH (admissão, promoção, transferência, desligamento, alteração salarial, avaliação) | Incremental / append-only |
+
+Para gerar (ou regenerar) os dados:
+
+```bash
+python scripts/generate_source_data.py --meses 12 --seed 42
+```
+
+## Projeto aplicado (`PROJETO_HR_DATA_PIPELINE.md`)
+
+Especificação de um projeto de Data Engineering: construir, a partir dos dados da landing zone, um pipeline em arquitetura de Lakehouse (Bronze → Silver → Gold) que popula um modelo estrela na camada Gold (`fato_eventos_rh` e dimensões com SCD Tipo 2), orquestrado e testado, alimentando um dashboard de métricas de RH (headcount, turnover, tempo de casa, taxa de promoção). O arquivo `.pdf` é uma exportação do mesmo documento.
+
+## Ambiente
+
+O ambiente virtual Python local (`.venv/`, ignorado pelo git) segue as dependências listadas em `requirements.txt`:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+jupyter lab   # ou: jupyter notebook
+```
+
+Os notebooks também podem ser abertos direto no Google Colab pelo badge no topo de cada um; nesse caso, é preciso clonar este repositório dentro do próprio Colab antes de rodar as células que leem os dados de `data/landing/` (instrução incluída no início de cada notebook).
