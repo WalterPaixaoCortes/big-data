@@ -1,0 +1,31 @@
+evento_id,funcionario_id,data_evento,tipo_evento,departamento_id,cargo_id,salario_anterior,salario_novo,motivo
+EVT000427,FUNC00205,2026-07-02,Admissão,D03,C11,,2228.05,Contratação
+EVT000428,FUNC00206,2026-07-18,Admissão,D08,C13,,2126.68,Contratação
+EVT000429,FUNC00207,2026-07-05,Admissão,D08,C08,,3500.0,Contratação
+EVT000430,FUNC00208,2026-07-06,Admissão,D08,C06,,14000.0,Contratação
+EVT000431,FUNC00209,2026-07-05,Admissão,D05,C14,,4108.32,Contratação
+EVT000432,FUNC00210,2026-07-13,Admissão,D06,C01,,3116.4,Contratação
+EVT000433,FUNC00211,2026-07-31,Admissão,D08,C04,,8540.56,Contratação
+EVT000434,FUNC00212,2026-07-21,Admissão,D02,C02,,4502.19,Contratação
+EVT000435,FUNC00002,2026-07-04,Transferência,D07,C01,,,Transferência de Diretoria para Marketing
+EVT000436,FUNC00012,2026-07-21,Alteração Salarial,D07,C07,22904.99,24742.47,Ajuste de mercado
+EVT000437,FUNC00014,2026-07-23,Alteração Salarial,D03,C09,5568.03,6044.23,Retenção de talento
+EVT000438,FUNC00018,2026-07-17,Avaliação,D04,C14,,,Avaliação de desempenho: nota 2/5
+EVT000439,FUNC00024,2026-07-24,Avaliação,D02,C11,,,Avaliação de desempenho: nota 5/5
+EVT000440,FUNC00027,2026-07-29,Avaliação,D03,C01,,,Avaliação de desempenho: nota 2/5
+EVT000441,FUNC00054,2026-07-04,Transferência,D03,C04,,,Transferência de Financeiro para Tecnologia
+EVT000442,FUNC00070,2026-07-25,Alteração Salarial,D02,C13,2120.38,2331.11,Ajuste de mercado
+EVT000443,FUNC00086,2026-07-17,Avaliação,D08,C07,,,Avaliação de desempenho: nota 4/5
+EVT000444,FUNC00088,2026-07-05,Avaliação,D01,C03,,,Avaliação de desempenho: nota 1/5
+EVT000445,FUNC00091,2026-07-09,Avaliação,D08,C05,,,Avaliação de desempenho: nota 5/5
+EVT000446,FUNC00114,2026-07-28,Avaliação,D05,C06,,,Avaliação de desempenho: nota 1/5
+EVT000447,FUNC00119,2026-07-26,Avaliação,D07,C06,,,Avaliação de desempenho: nota 4/5
+EVT000448,FUNC00120,2026-07-16,Promoção,D08,C06,9806.52,14000,Promoção de Coordenador para Gerente
+EVT000449,FUNC00135,2026-07-09,Alteração Salarial,D08,C08,3500.0,3811.25,Reajuste anual
+EVT000450,FUNC00139,2026-07-28,Avaliação,D02,C14,,,Avaliação de desempenho: nota 3/5
+EVT000451,FUNC00144,2026-07-23,Avaliação,D01,C02,,,Avaliação de desempenho: nota 3/5
+EVT000452,FUNC00146,2026-07-18,Avaliação,D07,C13,,,Avaliação de desempenho: nota 2/5
+EVT000453,FUNC00149,2026-07-01,Transferência,D06,C13,,,Transferência de Vendas para Operações
+EVT000454,FUNC00183,2026-07-24,Avaliação,D01,C06,,,Avaliação de desempenho: nota 3/5
+EVT000455,FUNC00185,2026-07-24,Transferência,D03,C07,,,Transferência de Operações para Tecnologia
+EVT000456,FUNC00193,2026-07-04,Avaliação,D07,C04,,,Avaliação de desempenho: nota 1/5

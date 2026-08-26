@@ -1,0 +1,31 @@
+evento_id,funcionario_id,data_evento,tipo_evento,departamento_id,cargo_id,salario_anterior,salario_novo,motivo
+EVT000193,FUNC00159,2025-11-24,Admissão,D04,C09,,5556.09,Contratação
+EVT000194,FUNC00160,2025-11-06,Admissão,D06,C06,,14000.0,Contratação
+EVT000195,FUNC00161,2025-11-08,Admissão,D04,C05,,9811.7,Contratação
+EVT000196,FUNC00162,2025-11-23,Admissão,D06,C08,,3500.0,Contratação
+EVT000197,FUNC00163,2025-11-18,Admissão,D06,C14,,4190.92,Contratação
+EVT000198,FUNC00164,2025-11-23,Admissão,D05,C08,,3500.0,Contratação
+EVT000199,FUNC00165,2025-11-30,Admissão,D02,C03,,6376.86,Contratação
+EVT000200,FUNC00166,2025-11-29,Admissão,D04,C11,,2202.1,Contratação
+EVT000201,FUNC00008,2025-11-21,Alteração Salarial,D05,C11,2228.07,2449.06,Retenção de talento
+EVT000202,FUNC00011,2025-11-30,Transferência,D02,C07,,,Transferência de Atendimento ao Cliente para Recursos Humanos
+EVT000203,FUNC00018,2025-11-29,Transferência,D04,C14,,,Transferência de Recursos Humanos para Financeiro
+EVT000204,FUNC00026,2025-11-26,Avaliação,D01,C14,,,Avaliação de desempenho: nota 2/5
+EVT000205,FUNC00035,2025-11-11,Avaliação,D02,C05,,,Avaliação de desempenho: nota 1/5
+EVT000206,FUNC00038,2025-11-08,Desligamento,D08,C03,6389.66,,Aposentadoria
+EVT000207,FUNC00042,2025-11-19,Promoção,D04,C12,2173.32,3000,Promoção de Atendente para Vendedor
+EVT000208,FUNC00044,2025-11-08,Alteração Salarial,D02,C14,4193.38,4363.8,Ajuste de mercado
+EVT000209,FUNC00072,2025-11-26,Alteração Salarial,D03,C12,3522.58,3670.09,Ajuste de mercado
+EVT000210,FUNC00077,2025-11-27,Desligamento,D05,C02,4511.08,,Desligamento sem justa causa
+EVT000211,FUNC00078,2025-11-19,Avaliação,D07,C06,,,Avaliação de desempenho: nota 4/5
+EVT000212,FUNC00090,2025-11-13,Avaliação,D04,C09,,,Avaliação de desempenho: nota 5/5
+EVT000213,FUNC00092,2025-11-12,Avaliação,D02,C08,,,Avaliação de desempenho: nota 5/5
+EVT000214,FUNC00095,2025-11-27,Desligamento,D07,C06,14000.0,,Pedido de demissão
+EVT000215,FUNC00107,2025-11-03,Avaliação,D01,C08,,,Avaliação de desempenho: nota 1/5
+EVT000216,FUNC00127,2025-11-16,Alteração Salarial,D04,C08,3500.0,3713.49,Retenção de talento
+EVT000217,FUNC00136,2025-11-30,Alteração Salarial,D06,C11,2215.24,2363.97,Ajuste de mercado
+EVT000218,FUNC00143,2025-11-07,Alteração Salarial,D03,C01,3040.99,3235.45,Retenção de talento
+EVT000219,FUNC00144,2025-11-20,Transferência,D01,C02,,,Transferência de Tecnologia para Diretoria
+EVT000220,FUNC00150,2025-11-30,Promoção,D04,C10,5550.03,8500,Promoção de Desenvolvedor Pleno para Desenvolvedor Sênior
+EVT000221,FUNC00152,2025-11-24,Avaliação,D08,C12,,,Avaliação de desempenho: nota 4/5
+EVT000222,FUNC00161,2025-11-15,Avaliação,D04,C05,,,Avaliação de desempenho: nota 4/5

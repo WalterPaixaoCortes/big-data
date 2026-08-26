@@ -1,0 +1,27 @@
+evento_id,funcionario_id,data_evento,tipo_evento,departamento_id,cargo_id,salario_anterior,salario_novo,motivo
+EVT000401,FUNC00201,2026-06-20,Admissão,D01,C07,,22652.77,Contratação
+EVT000402,FUNC00202,2026-06-17,Admissão,D05,C02,,4543.81,Contratação
+EVT000403,FUNC00203,2026-06-13,Admissão,D04,C13,,2124.25,Contratação
+EVT000404,FUNC00204,2026-06-28,Admissão,D05,C02,,4503.38,Contratação
+EVT000405,FUNC00031,2026-06-19,Avaliação,D03,C02,,,Avaliação de desempenho: nota 5/5
+EVT000406,FUNC00033,2026-06-18,Transferência,D04,C10,,,Transferência de Recursos Humanos para Financeiro
+EVT000407,FUNC00039,2026-06-01,Promoção,D06,C02,4342.74,4777.01,Promoção de Recrutador para Analista Pleno
+EVT000408,FUNC00058,2026-06-26,Promoção,D08,C06,9984.5,14000,Promoção de Coordenador para Gerente
+EVT000409,FUNC00065,2026-06-13,Avaliação,D07,C05,,,Avaliação de desempenho: nota 2/5
+EVT000410,FUNC00069,2026-06-21,Avaliação,D07,C07,,,Avaliação de desempenho: nota 3/5
+EVT000411,FUNC00100,2026-06-28,Promoção,D04,C03,4791.85,6500,Promoção de Analista Pleno para Analista Sênior
+EVT000412,FUNC00105,2026-06-04,Avaliação,D07,C10,,,Avaliação de desempenho: nota 4/5
+EVT000413,FUNC00106,2026-06-18,Alteração Salarial,D01,C08,3500.0,3847.84,Retenção de talento
+EVT000414,FUNC00109,2026-06-05,Avaliação,D01,C14,,,Avaliação de desempenho: nota 4/5
+EVT000415,FUNC00112,2026-06-21,Avaliação,D03,C03,,,Avaliação de desempenho: nota 5/5
+EVT000416,FUNC00132,2026-06-10,Promoção,D03,C02,3039.81,4500,Promoção de Analista Júnior para Analista Pleno
+EVT000417,FUNC00142,2026-06-26,Desligamento,D06,C06,14000.0,,Fim de contrato de experiência
+EVT000418,FUNC00148,2026-06-09,Avaliação,D04,C01,,,Avaliação de desempenho: nota 2/5
+EVT000419,FUNC00156,2026-06-10,Avaliação,D08,C03,,,Avaliação de desempenho: nota 4/5
+EVT000420,FUNC00161,2026-06-05,Alteração Salarial,D04,C05,9811.7,10578.46,Reajuste anual
+EVT000421,FUNC00164,2026-06-24,Promoção,D05,C09,3875.7,5500,Promoção de Desenvolvedor Júnior para Desenvolvedor Pleno
+EVT000422,FUNC00170,2026-06-26,Transferência,D01,C01,,,Transferência de Recursos Humanos para Diretoria
+EVT000423,FUNC00172,2026-06-05,Alteração Salarial,D06,C03,6434.8,7077.05,Reajuste anual
+EVT000424,FUNC00189,2026-06-17,Avaliação,D02,C07,,,Avaliação de desempenho: nota 4/5
+EVT000425,FUNC00197,2026-06-19,Avaliação,D05,C02,,,Avaliação de desempenho: nota 2/5
+EVT000426,FUNC00203,2026-06-16,Avaliação,D04,C13,,,Avaliação de desempenho: nota 5/5

@@ -1,0 +1,15 @@
+cargo_id,nome_cargo,nivel,faixa_salarial_min,faixa_salarial_max,data_extracao
+C01,Analista Júnior,Júnior,3000,4500,2026-02-01
+C02,Analista Pleno,Pleno,4500,6500,2026-02-01
+C03,Analista Sênior,Sênior,6500,9000,2026-02-01
+C04,Especialista,Especialista,9000,12000,2026-02-01
+C05,Coordenador,Coordenador,10000,14000,2026-02-01
+C06,Gerente,Gerente,14000,20000,2026-02-01
+C07,Diretor,Diretor,22000,35000,2026-02-01
+C08,Desenvolvedor Júnior,Júnior,3500,5000,2026-02-01
+C09,Desenvolvedor Pleno,Pleno,5500,8000,2026-02-01
+C10,Desenvolvedor Sênior,Sênior,8500,13500,2026-02-01
+C11,Assistente Administrativo,Júnior,2200,3200,2026-02-01
+C12,Vendedor,Pleno,3000,6000,2026-02-01
+C13,Atendente,Júnior,2200,3000,2026-02-01
+C14,Recrutador,Pleno,4000,6000,2026-02-01

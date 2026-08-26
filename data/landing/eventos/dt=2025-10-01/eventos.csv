@@ -1,0 +1,28 @@
+evento_id,funcionario_id,data_evento,tipo_evento,departamento_id,cargo_id,salario_anterior,salario_novo,motivo
+EVT000166,FUNC00151,2025-10-22,Admissão,D06,C13,,2186.66,Contratação
+EVT000167,FUNC00152,2025-10-06,Admissão,D08,C12,,3758.08,Contratação
+EVT000168,FUNC00153,2025-10-15,Admissão,D01,C04,,8525.33,Contratação
+EVT000169,FUNC00154,2025-10-27,Admissão,D01,C05,,9849.34,Contratação
+EVT000170,FUNC00155,2025-10-02,Admissão,D02,C05,,9840.13,Contratação
+EVT000171,FUNC00156,2025-10-31,Admissão,D08,C03,,6361.59,Contratação
+EVT000172,FUNC00157,2025-10-24,Admissão,D03,C07,,23363.69,Contratação
+EVT000173,FUNC00158,2025-10-10,Admissão,D07,C10,,8483.34,Contratação
+EVT000174,FUNC00011,2025-10-02,Avaliação,D08,C07,,,Avaliação de desempenho: nota 2/5
+EVT000175,FUNC00014,2025-10-19,Transferência,D03,C09,,,Transferência de Diretoria para Tecnologia
+EVT000176,FUNC00017,2025-10-25,Avaliação,D01,C08,,,Avaliação de desempenho: nota 2/5
+EVT000177,FUNC00028,2025-10-07,Avaliação,D08,C11,,,Avaliação de desempenho: nota 1/5
+EVT000178,FUNC00034,2025-10-23,Alteração Salarial,D06,C04,8829.01,9524.7,Ajuste de mercado
+EVT000179,FUNC00044,2025-10-18,Avaliação,D02,C14,,,Avaliação de desempenho: nota 1/5
+EVT000180,FUNC00049,2025-10-03,Avaliação,D07,C11,,,Avaliação de desempenho: nota 3/5
+EVT000181,FUNC00050,2025-10-21,Avaliação,D07,C04,,,Avaliação de desempenho: nota 4/5
+EVT000182,FUNC00055,2025-10-31,Avaliação,D04,C09,,,Avaliação de desempenho: nota 5/5
+EVT000183,FUNC00057,2025-10-27,Avaliação,D08,C12,,,Avaliação de desempenho: nota 2/5
+EVT000184,FUNC00074,2025-10-03,Alteração Salarial,D07,C10,8466.36,9209.12,Retenção de talento
+EVT000185,FUNC00083,2025-10-15,Alteração Salarial,D05,C10,8453.06,8752.23,Ajuste de mercado
+EVT000186,FUNC00089,2025-10-13,Avaliação,D08,C12,,,Avaliação de desempenho: nota 3/5
+EVT000187,FUNC00107,2025-10-12,Alteração Salarial,D01,C08,3500.0,3693.63,Retenção de talento
+EVT000188,FUNC00114,2025-10-12,Alteração Salarial,D05,C06,14000.0,14484.46,Retenção de talento
+EVT000189,FUNC00116,2025-10-10,Avaliação,D01,C05,,,Avaliação de desempenho: nota 5/5
+EVT000190,FUNC00120,2025-10-04,Avaliação,D08,C05,,,Avaliação de desempenho: nota 1/5
+EVT000191,FUNC00126,2025-10-02,Transferência,D07,C07,,,Transferência de Recursos Humanos para Marketing
+EVT000192,FUNC00139,2025-10-22,Avaliação,D02,C14,,,Avaliação de desempenho: nota 4/5

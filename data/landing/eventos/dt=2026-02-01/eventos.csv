@@ -1,0 +1,39 @@
+evento_id,funcionario_id,data_evento,tipo_evento,departamento_id,cargo_id,salario_anterior,salario_novo,motivo
+EVT000278,FUNC00179,2026-02-12,Admissão,D01,C11,,2207.17,Contratação
+EVT000279,FUNC00180,2026-02-15,Admissão,D05,C13,,2167.27,Contratação
+EVT000280,FUNC00181,2026-02-10,Admissão,D04,C12,,3556.71,Contratação
+EVT000281,FUNC00182,2026-02-24,Admissão,D04,C13,,2184.94,Contratação
+EVT000282,FUNC00183,2026-02-21,Admissão,D01,C06,,14000.0,Contratação
+EVT000283,FUNC00184,2026-02-07,Admissão,D08,C07,,24402.96,Contratação
+EVT000284,FUNC00185,2026-02-08,Admissão,D06,C07,,23146.15,Contratação
+EVT000285,FUNC00009,2026-02-08,Avaliação,D05,C07,,,Avaliação de desempenho: nota 2/5
+EVT000286,FUNC00011,2026-02-19,Avaliação,D02,C07,,,Avaliação de desempenho: nota 1/5
+EVT000287,FUNC00017,2026-02-28,Avaliação,D01,C08,,,Avaliação de desempenho: nota 2/5
+EVT000288,FUNC00020,2026-02-20,Transferência,D07,C08,,,Transferência de Atendimento ao Cliente para Marketing
+EVT000289,FUNC00026,2026-02-06,Transferência,D05,C14,,,Transferência de Diretoria para Vendas
+EVT000290,FUNC00031,2026-02-04,Promoção,D03,C02,3062.88,4500,Promoção de Analista Júnior para Analista Pleno
+EVT000291,FUNC00033,2026-02-08,Avaliação,D02,C10,,,Avaliação de desempenho: nota 4/5
+EVT000292,FUNC00035,2026-02-21,Avaliação,D02,C05,,,Avaliação de desempenho: nota 5/5
+EVT000293,FUNC00037,2026-02-03,Promoção,D04,C03,4500,6500,Promoção de Analista Pleno para Analista Sênior
+EVT000294,FUNC00041,2026-02-05,Avaliação,D03,C04,,,Avaliação de desempenho: nota 3/5
+EVT000295,FUNC00042,2026-02-04,Transferência,D05,C12,,,Transferência de Financeiro para Vendas
+EVT000296,FUNC00050,2026-02-05,Transferência,D05,C04,,,Transferência de Marketing para Vendas
+EVT000297,FUNC00066,2026-02-08,Transferência,D08,C11,,,Transferência de Recursos Humanos para Atendimento ao Cliente
+EVT000298,FUNC00071,2026-02-06,Avaliação,D06,C11,,,Avaliação de desempenho: nota 2/5
+EVT000299,FUNC00082,2026-02-19,Transferência,D07,C09,,,Transferência de Vendas para Marketing
+EVT000300,FUNC00089,2026-02-03,Alteração Salarial,D08,C12,3085.42,3345.06,Reajuste anual
+EVT000301,FUNC00096,2026-02-11,Alteração Salarial,D01,C14,4090.97,4268.08,Retenção de talento
+EVT000302,FUNC00113,2026-02-10,Avaliação,D05,C11,,,Avaliação de desempenho: nota 1/5
+EVT000303,FUNC00120,2026-02-19,Avaliação,D08,C05,,,Avaliação de desempenho: nota 4/5
+EVT000304,FUNC00128,2026-02-23,Alteração Salarial,D04,C05,9806.36,10327.07,Reajuste anual
+EVT000305,FUNC00129,2026-02-24,Desligamento,D03,C04,9234.45,,Aposentadoria
+EVT000306,FUNC00141,2026-02-04,Avaliação,D05,C05,,,Avaliação de desempenho: nota 2/5
+EVT000307,FUNC00146,2026-02-23,Transferência,D07,C13,,,Transferência de Diretoria para Marketing
+EVT000308,FUNC00154,2026-02-08,Avaliação,D01,C05,,,Avaliação de desempenho: nota 4/5
+EVT000309,FUNC00157,2026-02-12,Desligamento,D03,C07,23363.69,,Pedido de demissão
+EVT000310,FUNC00160,2026-02-07,Avaliação,D06,C06,,,Avaliação de desempenho: nota 2/5
+EVT000311,FUNC00169,2026-02-15,Alteração Salarial,D03,C03,7040.24,7530.08,Ajuste de mercado
+EVT000312,FUNC00171,2026-02-19,Alteração Salarial,D03,C12,3010.97,3305.15,Retenção de talento
+EVT000313,FUNC00172,2026-02-04,Avaliação,D06,C03,,,Avaliação de desempenho: nota 3/5
+EVT000314,FUNC00175,2026-02-18,Alteração Salarial,D03,C02,4518.67,4811.66,Retenção de talento
+EVT000315,FUNC00185,2026-02-05,Avaliação,D06,C07,,,Avaliação de desempenho: nota 4/5

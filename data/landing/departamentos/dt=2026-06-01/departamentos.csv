@@ -1,0 +1,9 @@
+departamento_id,nome_departamento,centro_custo,departamento_pai_id,data_extracao
+D01,Diretoria,CC-100,,2026-06-01
+D02,Recursos Humanos,CC-210,D01,2026-06-01
+D03,Tecnologia e Dados,CC-220,D01,2026-06-01
+D04,Financeiro,CC-231,D01,2026-06-01
+D05,Vendas,CC-240,D01,2026-06-01
+D06,Operações,CC-250,D01,2026-06-01
+D07,Marketing,CC-260,D01,2026-06-01
+D08,Atendimento ao Cliente,CC-241,D05,2026-06-01
