@@ -2,3 +2,4 @@
 *.pdf
 .claude
 data/lakehouse/
+.vscode/
