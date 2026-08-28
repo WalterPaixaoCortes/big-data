@@ -1,4 +1,4 @@
-# gr-notebooks
+# Aula de Big Data
 
 Repositório de notebooks e material de apoio sobre **Engenharia de Dados e Big Data**, organizado em torno de um projeto aplicado: um pipeline de dados de eventos de RH em arquitetura de Lakehouse.
 
