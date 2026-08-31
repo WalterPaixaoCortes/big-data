@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Conceitos Básicos de Big Data — Aula 01</title>
+<title>Conceitos Básicos de Big Data</title>
 <style>
 /* ===== base.css (motor neutro da skill criar-slides-html) ===== */
 :root {
@@ -198,6 +198,19 @@ h1, h2, h3 { font-weight: 700; }
 .hub-arrow svg { width: 40px; height: 52px; }
 .hub-caption { font-size: 22px; color: var(--muted); text-align: center; max-width: 800px; }
 .hub-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; width: 100%; }
+
+.section-title { max-width: 1680px; margin-bottom: 20px; font-size: 52px; line-height: 1.05; letter-spacing: -0.03em; color: var(--accent); }
+
+.agenda-repo-link { margin-top: 56px; display: inline-flex; align-items: center; gap: 16px; color: var(--muted); font-size: 24px; text-decoration: none; }
+.agenda-repo-link svg { width: 28px; height: 28px; flex: none; fill: none; stroke: currentcolor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+.thanks-image-wrap { position: absolute; top: 0; right: 0; bottom: 0; width: 864px; z-index: 1; overflow: hidden; }
+.thanks-image { width: 100%; height: 100%; object-fit: cover; object-position: 60% 30%; }
+.thanks-content { position: relative; max-width: 820px; }
+
+.repo-card { width: fit-content; display: inline-flex; align-items: center; gap: 28px; margin-top: 64px; padding: 40px 64px; border-radius: 999px; background: var(--primary); color: var(--text-inverse); text-decoration: none; }
+.repo-card svg { width: 56px; height: 56px; flex: none; fill: none; stroke: currentcolor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.repo-card span { font-size: 40px; font-weight: 700; letter-spacing: -0.01em; }
 .hub-row .flow-node { min-height: 160px; }
 
 .dag-grid { display: grid; grid-template-columns: 1.1fr 72px 1.1fr 72px 1fr; grid-template-rows: 1fr 1fr; gap: 28px 0; align-items: stretch; margin-top: 48px; }
@@ -227,6 +240,8 @@ h1, h2, h3 { font-weight: 700; }
 .star-node--bottom { grid-column: 2; grid-row: 3; }
 
 .grain-note { margin-top: 32px; font-size: 24px; color: var(--muted); max-width: 1200px; }
+
+p.source { margin-top: 16px; color: var(--muted); }
 
 .batch-stream-grid { margin-top: 40px; }
 .mini-flow { display: flex; flex-direction: column; gap: 16px; align-items: center; margin-top: 28px; }
@@ -270,23 +285,45 @@ h1, h2, h3 { font-weight: 700; }
   <symbol id="i-server" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></symbol>
   <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></symbol>
   <symbol id="i-chart-column" viewBox="0 0 24 24"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></symbol>
 </svg>
 
 <!-- 1. Abertura -->
 <section class="slide active hero" data-title="Conceitos Básicos de Big Data">
   <div class="slide-body slide-body--center-y">
-    <p class="eyebrow animate-up">Aula 01 · Engenharia de Dados e Big Data</p>
+    <p class="eyebrow animate-up">Engenharia de Dados e Big Data</p>
     <h1 class="animate-up delay-1">Conceitos Básicos de Big Data</h1>
     <p class="lead animate-up delay-2">Big Data não é sobre o tamanho do dado — é sobre o limite das suas ferramentas.</p>
   </div>
 </section>
 
-<!-- 2. O modismo por trás do termo -->
+<!-- 2. Agenda -->
+<section class="slide agenda" data-title="Agenda">
+  <header class="slide-header">
+    <p class="eyebrow animate-up">Agenda</p>
+    <h2 class="animate-up delay-1">O caminho desta aula</h2>
+  </header>
+  <div class="slide-body slide-body--center-y">
+    <ol class="agenda-list animate-up delay-2">
+      <li><span>01</span>Big Data: além do modismo</li>
+      <li><span>02</span>O ecossistema que resolve o problema</li>
+      <li><span>03</span>Fundamentos de modelagem dimensional</li>
+      <li><span>04</span>Fechamento e onde se aprofundar</li>
+    </ol>
+    <a class="agenda-repo-link animate-up delay-3" href="https://github.com/WalterPaixaoCortes/big-data" target="_blank" rel="noopener">
+      <svg aria-hidden="true"><use href="#i-github"/></svg>
+      <span>Material completo em github.com/WalterPaixaoCortes/big-data</span>
+    </a>
+  </div>
+</section>
+
+<!-- 3. O modismo por trás do termo -->
 <section class="slide" data-title="Um termo mal definido">
   <div class="slide-body slide-body--center">
     <div style="max-width:1300px; text-align:left;">
-      <p class="eyebrow animate-up">Ponto de partida</p>
-      <h2 class="animate-up delay-1">Um termo citado — e mal definido</h2>
+      <h2 class="section-title animate-up">Big Data: além do modismo</h2>
+      <p class="lead animate-up delay-1">Um termo citado — e mal definido</p>
       <ul class="simple-list animate-up delay-2">
         <li>"Muitos dados"? "Spark e Hadoop"? "Jargão de marketing"?</li>
         <li>O objetivo desta aula: sair do modismo e chegar a <strong>critérios objetivos</strong></li>
@@ -295,20 +332,20 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 3. Big Data, afinal -->
+<!-- 4. Big Data, afinal -->
 <section class="slide quote" data-title="Não é sobre o tamanho">
-  <header class="slide-header"><p class="eyebrow animate-up">Definição-chave da aula</p></header>
+  <header class="slide-header"><h2 class="section-title animate-up">Big Data: além do modismo</h2></header>
   <div class="slide-body slide-body--center-y">
     <blockquote class="animate-up delay-1">Big Data não é sobre o tamanho do dado — é sobre o limite das suas ferramentas.</blockquote>
     <p class="caption animate-up delay-2">Cenário clássico: um arquivo, um programa, uma máquina, cabendo na memória RAM (o caso do Pandas).</p>
   </div>
 </section>
 
-<!-- 4. Os três limites -->
+<!-- 5. Os três limites -->
 <section class="slide" data-title="Os três limites">
   <header class="slide-header">
-    <p class="eyebrow animate-up">O que caracteriza o problema</p>
-    <h2 class="animate-up delay-1">Quando as ferramentas tradicionais param de funcionar</h2>
+    <h2 class="section-title animate-up">Big Data: além do modismo</h2>
+    <p class="lead animate-up delay-1">Quando as ferramentas tradicionais param de funcionar</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="grid-3 limit-grid animate-up delay-2">
@@ -319,20 +356,20 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 5. Um problema mais antigo que o termo -->
+<!-- 6. Um problema mais antigo que o termo -->
 <section class="slide quote" data-title="Tidal wave of data (1999)">
-  <header class="slide-header"><p class="eyebrow animate-up">Um problema mais antigo que o termo</p></header>
+  <header class="slide-header"><h2 class="section-title animate-up">Big Data: além do modismo</h2></header>
   <div class="slide-body slide-body--center-y">
     <blockquote class="animate-up delay-1">"It's sink or swim as a tidal wave of data approaches."</blockquote>
     <p class="caption animate-up delay-2">Nature, 1999 (Reichhardt) — genômica e astronomia já enfrentavam o mesmo problema, dez anos antes do termo "Big Data" pegar.</p>
   </div>
 </section>
 
-<!-- 6. Os 5 V's -->
+<!-- 7. Os 5 V's -->
 <section class="slide" data-title="Os 5 V's do Big Data">
   <header class="slide-header">
-    <p class="eyebrow animate-up">Vocabulário fundamental</p>
-    <h2 class="animate-up delay-1">Os 5 V's do Big Data</h2>
+    <h2 class="section-title animate-up">Big Data: além do modismo</h2>
+    <p class="lead animate-up delay-1">Os 5 V's do Big Data</p>
   </header>
   <div class="slide-body slide-body--top">
     <p class="caption animate-up delay-2" data-allow-small-text style="max-width:1400px;">3 V's originais (Doug Laney, META Group, 2001) + 2 incorporados depois pelo mercado (IBM e outros).</p>
@@ -346,11 +383,27 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 7. Mão na massa: crescimento da base -->
+<!-- 8. Os dados que vamos usar -->
+<section class="slide" data-title="Os dados que vamos usar">
+  <header class="slide-header">
+    <h2 class="section-title animate-up">Big Data: além do modismo</h2>
+    <p class="lead animate-up delay-1">Os dados que vamos usar</p>
+  </header>
+  <div class="slide-body slide-body--center-y">
+    <div class="grid-3 animate-up delay-2">
+      <article class="card"><h3>Funcionários</h3><p>Dados de RH de uma empresa fictícia: nome, cargo, departamento, status, data de admissão.</p></article>
+      <article class="card"><h3>CSV particionado por mês</h3><p>Cada extração mensal vira sua própria pasta — padrão comum em pipelines de ingestão de sistemas de RH/HCM.</p></article>
+      <article class="card"><h3>12 meses</h3><p>De set/2025 a ago/2026 — cada partição é uma fotografia completa da base naquele momento.</p></article>
+    </div>
+    <p class="caption animate-up delay-3" style="font-family: 'SF Mono', ui-monospace, monospace;">data/landing/funcionarios/dt=AAAA-MM-DD/funcionarios.csv</p>
+  </div>
+</section>
+
+<!-- 9. Mão na massa: crescimento da base -->
 <section class="slide" data-title="Crescimento da base de funcionários">
   <header class="slide-header">
-    <p class="eyebrow animate-up">Colocando a mão na massa</p>
-    <h2 class="animate-up delay-1">Medindo o crescimento da base, mês a mês</h2>
+    <h2 class="section-title animate-up">Big Data: além do modismo</h2>
+    <p class="lead animate-up delay-1">Medindo o crescimento da base, mês a mês</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="chart-wrap animate-up delay-2">
@@ -378,11 +431,11 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 8. A armadilha da duplicidade -->
+<!-- 10. A armadilha da duplicidade -->
 <section class="slide" data-title="Nem toda linha é um funcionário novo">
   <header class="slide-header">
-    <p class="eyebrow animate-up">O que os números escondem</p>
-    <h2 class="animate-up delay-1">Nem toda linha é um funcionário novo</h2>
+    <h2 class="section-title animate-up">Big Data: além do modismo</h2>
+    <p class="lead animate-up delay-1">Nem toda linha é um funcionário novo</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="stat-row animate-up delay-2">
@@ -399,11 +452,11 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 9. Quando Pandas (e Excel) não bastam mais -->
+<!-- 11. Quando Pandas (e Excel) não bastam mais -->
 <section class="slide" data-title="Três sinais">
   <header class="slide-header">
-    <p class="eyebrow animate-up">O limite do single-machine</p>
-    <h2 class="animate-up delay-1">Três sinais de que chegou a hora</h2>
+    <h2 class="section-title animate-up">Big Data: além do modismo</h2>
+    <p class="lead animate-up delay-1">Três sinais de que chegou a hora</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="grid-3 sign-grid animate-up delay-2">
@@ -414,11 +467,11 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 10. O ecossistema de Big Data -->
+<!-- 12. O ecossistema de Big Data -->
 <section class="slide" data-title="O ecossistema de Big Data">
   <header class="slide-header">
-    <p class="eyebrow animate-up">Mapa da seção</p>
-    <h2 class="animate-up delay-1">Quatro peças que resolvem o problema</h2>
+    <h2 class="section-title animate-up">O ecossistema que resolve o problema</h2>
+    <p class="lead animate-up delay-1">Quatro peças que resolvem o problema</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="flow-row animate-up delay-2" data-nodes="3">
@@ -438,11 +491,12 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 11. Armazenamento distribuído — GFS -->
+<!-- 13. Armazenamento distribuído — GFS -->
 <section class="slide" data-title="Armazenamento Distribuído — GFS">
   <header class="slide-header">
-    <p class="eyebrow animate-up">Google File System · Ghemawat, Gobioff &amp; Leung, SOSP '03 (2003)</p>
-    <h2 class="animate-up delay-1">Armazenamento Distribuído</h2>
+    <h2 class="section-title animate-up">O ecossistema que resolve o problema</h2>
+    <p class="lead animate-up delay-1">Armazenamento Distribuído</p>
+    <p class="caption animate-up delay-2">Google File System — Ghemawat, Gobioff &amp; Leung, SOSP '03 (2003)</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="hub-flow animate-up delay-2">
@@ -458,11 +512,12 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 12. Processamento distribuído — MapReduce e Spark -->
+<!-- 14. Processamento distribuído — MapReduce e Spark -->
 <section class="slide" data-title="Processamento Distribuído">
   <header class="slide-header">
-    <p class="eyebrow animate-up">MapReduce (Dean &amp; Ghemawat, OSDI '04) → Apache Spark (Zaharia et al., NSDI '12)</p>
-    <h2 class="animate-up delay-1">Processamento Distribuído</h2>
+    <h2 class="section-title animate-up">O ecossistema que resolve o problema</h2>
+    <p class="lead animate-up delay-1">Processamento Distribuído</p>
+    <p class="caption animate-up delay-2">MapReduce (Dean &amp; Ghemawat, OSDI '04) → Apache Spark (Zaharia et al., NSDI '12)</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="flow-row" data-nodes="5" style="margin-top:32px;">
@@ -480,11 +535,12 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 13. Arquitetura Lakehouse e camadas Medalhão -->
+<!-- 15. Arquitetura Lakehouse e camadas Medalhão -->
 <section class="slide" data-title="Lakehouse e Camadas Medalhão">
   <header class="slide-header">
-    <p class="eyebrow animate-up">Armbrust, Ghodsi, Xin &amp; Zaharia — CIDR '21</p>
-    <h2 class="animate-up delay-1">Arquitetura Lakehouse e Camadas Medalhão</h2>
+    <h2 class="section-title animate-up">O ecossistema que resolve o problema</h2>
+    <p class="lead animate-up delay-1">Arquitetura Lakehouse e Camadas Medalhão</p>
+    <p class="caption animate-up delay-2">Armbrust, Ghodsi, Xin &amp; Zaharia — CIDR '21</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="flow-row" data-nodes="5" style="margin-top:32px;">
@@ -502,11 +558,12 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 14. Orquestração -->
+<!-- 16. Orquestração -->
 <section class="slide" data-title="Orquestração — Airflow">
   <header class="slide-header">
-    <p class="eyebrow animate-up">Apache Airflow · Beauchemin, Airbnb Engineering (2015)</p>
-    <h2 class="animate-up delay-1">Orquestração</h2>
+    <h2 class="section-title animate-up">O ecossistema que resolve o problema</h2>
+    <p class="lead animate-up delay-1">Orquestração</p>
+    <p class="caption animate-up delay-2">Apache Airflow · Beauchemin, Airbnb Engineering (2015)</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="dag-grid animate-up delay-2">
@@ -523,22 +580,22 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 15. Transição -->
+<!-- 17. Transição -->
 <section class="slide" data-title="Da camada Gold ao modelo de dados">
   <div class="slide-body slide-body--center">
     <div style="max-width:1300px; text-align:center;">
-      <p class="eyebrow animate-up">Virada de assunto</p>
-      <h2 class="animate-up delay-1">"Modelado para consumo analítico" — o que isso quer dizer?</h2>
-      <p class="lead animate-up delay-2" style="margin:0 auto;">Modelagem dimensional: tanta teoria — e tanta história — quanto o próprio Big Data.</p>
+      <h2 class="section-title animate-up">Fundamentos de modelagem dimensional</h2>
+      <p class="lead animate-up delay-1" style="margin:0 auto;">"Modelado para consumo analítico" — o que isso quer dizer?</p>
+      <p class="lead animate-up delay-2" style="margin:32px auto 0;">Modelagem dimensional: tanta teoria — e tanta história — quanto o próprio Big Data.</p>
     </div>
   </div>
 </section>
 
-<!-- 16. OLTP vs. OLAP -->
+<!-- 18. OLTP vs. OLAP -->
 <section class="slide" data-title="OLTP vs. OLAP">
   <header class="slide-header">
-    <p class="eyebrow animate-up">Dois mundos com objetivos diferentes</p>
-    <h2 class="animate-up delay-1">OLTP vs. OLAP</h2>
+    <h2 class="section-title animate-up">Fundamentos de modelagem dimensional</h2>
+    <p class="lead animate-up delay-1">OLTP vs. OLAP</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="grid-2 animate-up delay-2">
@@ -562,11 +619,12 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 17. Os quatro tipos de analytics -->
+<!-- 19. Os quatro tipos de analytics -->
 <section class="slide" data-title="Os quatro tipos de analytics">
   <header class="slide-header">
-    <p class="eyebrow animate-up">Delen &amp; Demirkan (2013) — escada de complexidade e valor</p>
-    <h2 class="animate-up delay-1">Antes de modelar: para que serve o modelo?</h2>
+    <h2 class="section-title animate-up">Fundamentos de modelagem dimensional</h2>
+    <p class="lead animate-up delay-1">Antes de modelar: para que serve o modelo?</p>
+    <p class="caption animate-up delay-2">Delen &amp; Demirkan (2013) — escada de complexidade e valor</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="flow-row animate-up delay-2" data-nodes="4">
@@ -582,11 +640,12 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 18. Fatos e dimensões -->
+<!-- 20. Fatos e dimensões -->
 <section class="slide" data-title="Fatos e Dimensões">
   <header class="slide-header">
-    <p class="eyebrow animate-up">Ralph Kimball — medições numéricas cercadas de contexto descritivo</p>
-    <h2 class="animate-up delay-1">O Modelo Dimensional: Fatos e Dimensões</h2>
+    <h2 class="section-title animate-up">Fundamentos de modelagem dimensional</h2>
+    <p class="lead animate-up delay-1">O Modelo Dimensional: Fatos e Dimensões</p>
+    <p class="caption animate-up delay-2">Ralph Kimball — medições numéricas cercadas de contexto descritivo</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="star-schema animate-up delay-2">
@@ -601,20 +660,21 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 19. O grão -->
+<!-- 21. O grão -->
 <section class="slide quote" data-title="Declare o grão">
-  <header class="slide-header"><p class="eyebrow animate-up">Kimball, "Keep to the Grain in Dimensional Modeling" (2007)</p></header>
+  <header class="slide-header"><h2 class="section-title animate-up">Fundamentos de modelagem dimensional</h2></header>
   <div class="slide-body slide-body--center-y">
     <blockquote class="animate-up delay-1">Antes de desenhar a fato: declare o grão. O que, exatamente, representa uma linha da tabela?</blockquote>
     <p class="caption grain-note animate-up delay-2">O grão deve partir do nível mais atômico possível, determinado pela realidade física da coleta na origem — não pelas perguntas de negócio de hoje.</p>
+    <p class="source animate-up delay-3">Kimball, "Keep to the Grain in Dimensional Modeling" (2007)</p>
   </div>
 </section>
 
-<!-- 20. Três tipos de tabela fato -->
+<!-- 22. Três tipos de tabela fato -->
 <section class="slide" data-title="Três tipos de tabela fato">
   <header class="slide-header">
-    <p class="eyebrow animate-up">Nem toda fato guarda o mesmo tipo de medição</p>
-    <h2 class="animate-up delay-1">Três tipos de tabela fato</h2>
+    <h2 class="section-title animate-up">Fundamentos de modelagem dimensional</h2>
+    <p class="lead animate-up delay-1">Três tipos de tabela fato</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="grid-3 fact-grid animate-up delay-2">
@@ -625,11 +685,11 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 21. Outros tipos de dimensão -->
+<!-- 23. Outros tipos de dimensão -->
 <section class="slide" data-title="Além da estrela básica">
   <header class="slide-header">
-    <p class="eyebrow animate-up">Variações que aparecem o tempo todo em modelos reais</p>
-    <h2 class="animate-up delay-1">Além da Estrela Básica</h2>
+    <h2 class="section-title animate-up">Fundamentos de modelagem dimensional</h2>
+    <p class="lead animate-up delay-1">Além da Estrela Básica</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="grid-2 animate-up delay-2">
@@ -641,11 +701,11 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 22. Slowly Changing Dimensions -->
+<!-- 24. Slowly Changing Dimensions -->
 <section class="slide" data-title="Slowly Changing Dimensions">
   <header class="slide-header">
-    <p class="eyebrow animate-up">Retomando a duplicidade que vimos na prática</p>
-    <h2 class="animate-up delay-1">Modelando Mudanças ao Longo do Tempo</h2>
+    <h2 class="section-title animate-up">Fundamentos de modelagem dimensional</h2>
+    <p class="lead animate-up delay-1">Modelando Mudanças ao Longo do Tempo</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="grid-2 animate-up delay-2">
@@ -655,11 +715,11 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 23. Batch vs. Streaming -->
+<!-- 25. Batch vs. Streaming -->
 <section class="slide" data-title="Batch vs. Streaming">
   <header class="slide-header">
-    <p class="eyebrow animate-up">Duas formas de processar dados ao longo do tempo</p>
-    <h2 class="animate-up delay-1">Batch vs. Streaming</h2>
+    <h2 class="section-title animate-up">Fundamentos de modelagem dimensional</h2>
+    <p class="lead animate-up delay-1">Batch vs. Streaming</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="grid-2 batch-stream-grid animate-up delay-2">
@@ -687,11 +747,11 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 24. Fechamento -->
+<!-- 26. Fechamento -->
 <section class="slide closing" data-title="O que você leva desta aula">
   <header class="slide-header">
-    <p class="eyebrow animate-up">Fechamento</p>
-    <h2 class="animate-up delay-1">O que você leva desta aula</h2>
+    <h2 class="section-title animate-up">Fechamento e onde se aprofundar</h2>
+    <p class="lead animate-up delay-1">O que você leva desta aula</p>
   </header>
   <div class="slide-body slide-body--center-y">
     <div class="recap-grid animate-up delay-2">
@@ -703,11 +763,11 @@ h1, h2, h3 { font-weight: 700; }
   </div>
 </section>
 
-<!-- 25. Para se aprofundar -->
+<!-- 27. Para se aprofundar -->
 <section class="slide" data-title="Para se aprofundar">
   <header class="slide-header">
-    <p class="eyebrow animate-up">Fontes originais desta aula</p>
-    <h2 class="animate-up delay-1">Para se aprofundar</h2>
+    <h2 class="section-title animate-up">Fechamento e onde se aprofundar</h2>
+    <p class="lead animate-up delay-1">Para se aprofundar</p>
   </header>
   <div class="slide-body slide-body--top">
     <ul class="ref-list animate-up delay-2">
@@ -719,6 +779,23 @@ h1, h2, h3 { font-weight: 700; }
       <li class="source"><strong>Kimball Group</strong> — Fact Tables and Dimension Tables · Slowly Changing Dimensions</li>
     </ul>
     <p class="caption animate-up delay-3">Lista completa (15 referências, em ordem cronológica) no notebook — seção "Os Artigos Originais, Reunidos".</p>
+  </div>
+</section>
+
+<!-- 28. Obrigado -->
+<section class="slide closing thanks" data-title="Obrigado!">
+  <div class="thanks-image-wrap" aria-hidden="true">
+    <img class="thanks-image media-fade-left" src="assets/images/gato-perguntas.jpg" alt="">
+  </div>
+  <div class="slide-body slide-body--center-y">
+    <div class="thanks-content">
+      <h2 class="animate-up">Obrigado!</h2>
+      <p class="lead animate-up delay-1">Dúvidas, sugestões ou feedback sobre a aula? Manda um e-mail.</p>
+      <a class="repo-card animate-up delay-2" href="mailto:wpcortes@gmail.com">
+        <svg aria-hidden="true"><use href="#i-mail"/></svg>
+        <span>wpcortes@gmail.com</span>
+      </a>
+    </div>
   </div>
 </section>
 
