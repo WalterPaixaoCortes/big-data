@@ -31,9 +31,10 @@ Contexto: aula ao vivo guiada pelo instrutor. Densidade baixa — os slides são
 
 ## 4. Big Data, afinal
 - **Título:** Big Data: além do modismo
-- **Citação (blockquote):** "Big Data não é sobre o tamanho do dado — é sobre o limite das suas ferramentas."
-- **Visual:** citação em destaque (quote/callout grande), tom de definição-chave da aula.
-- **Nota:** contextualizar o cenário "clássico" antes: um arquivo, um programa, uma máquina, cabendo na RAM (ex.: Pandas).
+- **Citação (blockquote):** "When you're hitting the limits of your technology, that's when data gets big."
+- **Fonte (citação em destaque menor):** Jeff Kelly, analista de Big Data da Wikibon — citado por Network World (2012)
+- **Visual:** citação em destaque (quote/callout grande), tom de definição-chave da aula, com tradução livre e atribuição ao autor.
+- **Nota:** contextualizar o cenário "clássico" antes: um arquivo, um programa, uma máquina, cabendo na RAM (ex.: Pandas). A frase não é uma citação literal de nenhum paper — é a formulação de Jeff Kelly (Wikibon), reportada pela Network World, que capta a mesma ideia central usada como tese de abertura da aula.
 
 ## 5. Os três limites
 - **Título:** Big Data: além do modismo
